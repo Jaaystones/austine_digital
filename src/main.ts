@@ -1,4 +1,3 @@
-//import './styles.css'
 import './styles.css'
 import { createLandingPage } from './components/landingPage'
 

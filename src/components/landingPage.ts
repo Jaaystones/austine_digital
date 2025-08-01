@@ -4,7 +4,7 @@ export function createLandingPage(): string {
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <img src="/images/Logo 4.jpg" alt="Austyne Digitals Logo" class="logo-image" />
+          <img src="/images/Logo 4.jpg" alt="Austyne Digitals Logo" class="logo-image" onerror="this.style.display='none'" />
           <div class="logo-text-container">
             <span class="logo-text">Austyne</span>
             <span class="logo-accent">Digitals</span>

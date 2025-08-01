@@ -74,12 +74,16 @@ body {
 }
 
 .logo-image {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
-    border-radius: 8px;
+    object-position: center;
+    border-radius: 6px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: var(--transition);
+    background: var(--white);
+    padding: 2px;
+    flex-shrink: 0;
 }
 
 .logo-image:hover {
@@ -1015,13 +1019,14 @@ p {
     }
 
     .logo-image {
-        width: 35px;
-        height: 35px;
+        width: 32px;
+        height: 32px;
+        padding: 1px;
     }
 
     .nav-logo {
-        font-size: 1.3rem;
-        gap: 8px;
+        font-size: 1.2rem;
+        gap: 6px;
     }
 
     .hero .container,
