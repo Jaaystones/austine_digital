@@ -4,8 +4,11 @@ export function createLandingPage(): string {
     <nav class="navbar" id="navbar">
       <div class="nav-container">
         <div class="nav-logo">
-          <span class="logo-text">Austyne</span>
-          <span class="logo-accent">Digitals</span>
+          <img src="/images/Logo 4.jpg" alt="Austyne Digitals Logo" class="logo-image" />
+          <div class="logo-text-container">
+            <span class="logo-text">Austyne</span>
+            <span class="logo-accent">Digitals</span>
+          </div>
         </div>
         <ul class="nav-menu" id="nav-menu">
           <li class="nav-item">
@@ -48,7 +51,7 @@ export function createLandingPage(): string {
       <div class="container">
         <div class="hero-content animate-on-scroll">
           <h1 class="hero-title">
-            <span class="highlight">STOP Guessing!</span> & Start Winning With Contents & Copy That Convert your <span class="highlight">"audience To SALES"</span>
+            <span class="highlight"></span> YOUR CONTENT AND COPY IS KILLING YOUR SALES! Here's How To Fix It!<span class="highlight">(Before You Lose Another Sale)</span>
           </h1>
           <p class="hero-subtitle">
             You're one smart move away from a content system that sells for you, builds loyal fans, and attracts ready-to-pay clients — without burnout or a crazy posting schedule...Works even when you're offline
