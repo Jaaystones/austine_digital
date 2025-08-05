@@ -7,6 +7,15 @@
 
 html {
     scroll-behavior: smooth;
+    /* Improve mobile scroll performance */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent horizontal scroll on mobile */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 :root {
@@ -33,6 +42,10 @@ body {
     overflow-x: hidden;
     padding-top: 80px;
     /* Account for fixed navbar */
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 /* Navigation Bar */
@@ -126,6 +139,12 @@ body {
     border-radius: 8px;
     transition: var(--transition);
     position: relative;
+    /* Mobile touch optimizations */
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link:hover {
@@ -202,11 +221,32 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: var(--transition);
+    /* Optimize animations for mobile */
+    will-change: opacity, transform;
+    backface-visibility: hidden;
 }
 
 .animate-on-scroll.animate-in {
     opacity: 1;
     transform: translateY(0);
+    will-change: auto;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .animate-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .cta-button::before {
+        transition: none;
+    }
 }
 
 /* Typography */
@@ -244,6 +284,17 @@ p {
     font-weight: 800;
 }
 
+/* Image Optimizations */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Improve mobile image performance */
+    image-rendering: optimizeQuality;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
 /* Buttons */
 .cta-button {
     display: inline-flex;
@@ -262,6 +313,13 @@ p {
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
+    /* Mobile touch optimizations */
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    min-height: 48px;
+    user-select: none;
 }
 
 .cta-button::before {
@@ -397,7 +455,7 @@ p {
 /* Brands Section */
 .brands-section {
     padding: 80px 0;
-    background: var(--bg-light);
+    background: var(--white);
     text-align: center;
 }
 
@@ -418,7 +476,8 @@ p {
     background: var(--white);
     padding: 30px 20px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
+    box-shadow: none;
+    border: none;
     transition: var(--transition);
     display: flex;
     align-items: center;
@@ -428,7 +487,7 @@ p {
 
 .brand-item:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow);
 }
 
 .brand-logo {
@@ -437,12 +496,13 @@ p {
     width: auto;
     height: auto;
     object-fit: contain;
-    filter: grayscale(100%);
+    filter: none;
     transition: var(--transition);
 }
 
 .brand-item:hover .brand-logo {
-    filter: grayscale(0%);
+    filter: none;
+    transform: scale(1.05);
 }
 
 .brand-placeholder {
@@ -653,8 +713,10 @@ p {
 /* Pricing Section */
 .pricing-section {
     margin-top: 80px;
-    padding-top: 60px;
+    padding: 60px 40px;
+    background: var(--white);
     border-top: 2px solid var(--bg-light);
+    border-radius: var(--border-radius);
 }
 
 .pricing-title {
@@ -678,9 +740,12 @@ p {
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-card {
@@ -829,13 +894,14 @@ p {
 /* Offers Section */
 .offers-section {
     padding: 100px 0;
-    background: var(--bg-dark);
-    color: var(--white);
+    background: var(--white);
+    color: var(--text-dark);
 }
 
 .offers-section h2 {
     text-align: center;
     margin-bottom: 60px;
+    color: var(--text-dark);
 }
 
 .offer-list {
@@ -846,24 +912,24 @@ p {
 }
 
 .offer-item {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-light);
     padding: 20px;
     border-radius: var(--border-radius);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--text-dark);
 }
 
 .pricing {
     text-align: center;
     margin-bottom: 50px;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-light);
     border-radius: var(--border-radius);
     border: 2px solid var(--primary-color);
 }
 
 .pricing h3 {
-    color: var(--accent-color);
+    color: var(--text-dark);
     margin-bottom: 10px;
 }
 
@@ -871,10 +937,19 @@ p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    color: var(--text-dark);
+}
+
+.offers-cta h3 {
+    color: var(--text-dark);
+}
+
+.offers-cta p {
+    color: var(--text-dark);
 }
 
 .urgency {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -967,17 +1042,38 @@ p {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .pricing-card.premium {
+        transform: none;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
+        font-size: 15px;
     }
 
     .nav-container {
         height: 70px;
+        padding: 0 15px;
     }
 
     .hamburger {
         display: flex;
+        z-index: 1001;
+        position: relative;
+        padding: 8px;
+        /* Larger touch target */
+        min-width: 44px;
+        min-height: 44px;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
     }
 
     .nav-menu {
@@ -994,6 +1090,8 @@ p {
         padding-top: 2rem;
         transition: left 0.3s ease;
         gap: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-menu.active {
@@ -1008,10 +1106,14 @@ p {
 
     .nav-link {
         display: block;
-        padding: 16px 32px;
+        padding: 20px 32px;
         font-size: 1.1rem;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
+        border-radius: 12px;
+        min-height: 56px;
+        /* Better touch target */
+        justify-content: center;
     }
 
     .nav-cta {
@@ -1045,22 +1147,42 @@ p {
         order: -1;
     }
 
+    .hero-image img {
+        border-radius: 16px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
     .container {
         padding: 0 15px;
     }
 
     .testimonials-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .testimonial {
+        padding: 25px 20px;
+        margin-bottom: 20px;
     }
 
     .services-grid,
     .offer-list {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .pricing-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
+        max-width: 100%;
+    }
+
+    .pricing-card {
+        margin: 0 auto;
+        max-width: 350px;
+        width: 100%;
     }
 
     .pricing-card.premium {
@@ -1069,51 +1191,175 @@ p {
 
     .pricing-title {
         font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
     .pricing-header {
-        padding: 20px 15px;
+        padding: 25px 20px;
     }
 
     .pricing-content {
-        padding: 20px 15px;
+        padding: 25px 20px;
     }
 
     .brands-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 25px;
+    }
+
+    .brand-item {
+        padding: 15px;
+    }
+
+    .brand-logo {
+        max-height: 60px;
     }
 
     .solution-points {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .point {
+        padding: 15px 20px;
+        text-align: center;
     }
 
     .social-links {
         flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        /* Larger touch targets */
     }
 
     .cta-button {
-        padding: 14px 28px;
+        padding: 16px 28px;
         font-size: 1rem;
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .cta-button.large {
-        padding: 16px 32px;
+        padding: 18px 32px;
         font-size: 1.1rem;
+        max-width: 350px;
+    }
+
+    /* Improve form elements on mobile */
+    input,
+    textarea,
+    select {
+        font-size: 16px;
+        /* Prevents zoom on iOS */
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 8px;
+    }
+
+    /* Fix text sizing issues */
+    p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding-top: 65px;
+    }
+
+    .nav-container {
+        height: 65px;
+        padding: 0 12px;
+    }
+
+    .nav-logo {
+        font-size: 1.1rem;
+    }
+
+    .logo-image {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hamburger {
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    .nav-menu {
+        top: 65px;
+        height: calc(100vh - 65px);
+        padding-top: 1.5rem;
+    }
+
+    .nav-link {
+        padding: 16px 20px;
+        font-size: 1rem;
+        min-height: 52px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
     .brands-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .brand-item {
+        padding: 12px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .brand-logo {
+        max-height: 50px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 25px;
     }
 
     .hero,
@@ -1124,6 +1370,262 @@ p {
     .offers-section,
     .about-detail-section,
     .final-cta-section {
-        padding: 60px 0;
+        padding: 50px 0;
+    }
+
+    .hero-image img {
+        border-radius: 12px;
+        max-height: 250px;
+    }
+
+    .testimonial {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .pricing-card {
+        max-width: 320px;
+        margin: 0 auto 20px;
+    }
+
+    .pricing-header {
+        padding: 20px 15px;
+    }
+
+    .pricing-content {
+        padding: 20px 15px;
+    }
+
+    .pricing-content ul li {
+        font-size: 0.9rem;
+        padding: 4px 0;
+    }
+
+    .price {
+        font-size: 1.3rem;
+    }
+
+    .point {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    .cta-button {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cta-button.large {
+        padding: 16px 28px;
+        font-size: 1rem;
+        max-width: 300px;
+    }
+
+    .social-links a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-links a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Improve spacing for small screens */
+    .testimonials-grid {
+        gap: 20px;
+    }
+
+    .services-grid {
+        gap: 16px;
+    }
+
+    .offer-list {
+        gap: 12px;
+    }
+
+    .offer-item {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    /* Better text readability */
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .pricing-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Optimize images for small screens */
+    .about-image img,
+    .problem-image img {
+        border-radius: 12px;
+        max-height: 200px;
+        object-fit: cover;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 360px) {
+    body {
+        font-size: 13px;
+        padding-top: 60px;
+    }
+
+    .nav-container {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    .nav-logo {
+        font-size: 1rem;
+        gap: 4px;
+    }
+
+    .logo-image {
+        width: 24px;
+        height: 24px;
+    }
+
+    .hamburger {
+        min-width: 36px;
+        min-height: 36px;
+        padding: 6px;
+    }
+
+    .nav-menu {
+        top: 60px;
+        height: calc(100vh - 60px);
+        padding-top: 1rem;
+    }
+
+    .nav-link {
+        padding: 14px 16px;
+        font-size: 0.95rem;
+        min-height: 48px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+        margin-bottom: 14px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .pricing-card {
+        max-width: 290px;
+    }
+
+    .pricing-header,
+    .pricing-content {
+        padding: 16px 12px;
+    }
+
+    .cta-button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        max-width: 260px;
+    }
+
+    .cta-button.large {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+        max-width: 280px;
+    }
+
+    .testimonial {
+        padding: 16px 12px;
+    }
+
+    .hero,
+    .problem-section,
+    .testimonials-section,
+    .about-section,
+    .services-section,
+    .offers-section,
+    .about-detail-section,
+    .final-cta-section {
+        padding: 40px 0;
+    }
+}
+
+/* Landscape orientation optimizations for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .nav-menu {
+        padding-top: 1rem;
+    }
+
+    .nav-link {
+        padding: 12px 32px;
+        min-height: 44px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero .container {
+        gap: 30px;
+    }
+
+    .hero-image img {
+        max-height: 200px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
+
+/* High DPI displays (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    .logo-image,
+    .brand-logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .nav-menu {
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .cta-button {
+        -webkit-touch-callout: none;
+    }
+
+    /* Fix iOS Safari 100vh issue */
+    .nav-menu {
+        height: calc(100vh - 70px);
+        height: calc(100dvh - 70px);
     }
 }

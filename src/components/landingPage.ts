@@ -1,5 +1,5 @@
 export function createLandingPage(): string {
-    return `
+  return `
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
       <div class="nav-container">
@@ -51,10 +51,10 @@ export function createLandingPage(): string {
       <div class="container">
         <div class="hero-content animate-on-scroll">
           <h1 class="hero-title">
-            <span class="highlight"></span> YOUR CONTENT AND COPY IS KILLING YOUR SALES! Here's How To Fix It!<span class="highlight">(Before You Lose Another Sale)</span>
+            Your Contents, & Copy Are Killing Your Sales. Here's How to Fix It <span class="highlight">(before you lose another sale)</span>
           </h1>
           <p class="hero-subtitle">
-            You're one smart move away from a content system that sells for you, builds loyal fans, and attracts ready-to-pay clients — without burnout or a crazy posting schedule...Works even when you're offline
+            You're posting. You're showing up. But sales? Still Not Coming!. The truth? It's not the algorithm. It's your messaging. Let me rebuild your content, copy, & funnel into a client-converting machine — so you can stop guessing and start scaling without burnout or BS
           </p>
           <button class="cta-button primary">
             <span>BOOK A FREE AUDIT</span>
@@ -64,7 +64,7 @@ export function createLandingPage(): string {
           </button>
         </div>
         <div class="hero-image animate-on-scroll">
-          <img src="https://austynedigitals.carrd.co/assets/images/image02.jpg?v=d1216927" alt="Transform your followers to buyers with strategies and Copy that converts" />
+          <img src="/images/Hero_image.jpg" alt="Transform your followers to buyers with strategies and Copy that converts" />
         </div>
       </div>
     </section>
@@ -102,8 +102,6 @@ export function createLandingPage(): string {
           <div class="brand-item">
             <img src="/images/Logo 5.jpg" alt="Brand 4" class="brand-logo" />
           </div>
-         \
-          </div>
         </div>
       </div>
     </section>
@@ -138,54 +136,60 @@ export function createLandingPage(): string {
         <h2 class="animate-on-scroll">What Clients Are Saying...</h2>
         <div class="testimonials-grid">
           <div class="testimonial animate-on-scroll">
+            <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
             <div class="testimonial-content">
-              <p>"I've paid more than this before for content strategy & Copywriting — but this was the first time I got real strategy that made sense And sales that I could track."</p>
+              <p>"I've paid way more for content strategy before — but this was the first time I got a plan that actually made sense… and sales I could track."</p>
             </div>
             <div class="testimonial-author">
-              <strong>Rowdy Mat</strong> — US-based Business Coach & info-product owner
+              <strong>Rowdy Mat</strong> — Business Coach (USA)
             </div>
           </div>
           
           <div class="testimonial animate-on-scroll">
+            <div class="testimonial-stars">⭐️⭐️⭐️⭐️</div>
             <div class="testimonial-content">
-              <p>"Nice guy! Austine fixed our bio, our captions & Ad Copy, our whole message — and our leads doubled in 3 weeks. Will surely work with him again"</p>
+              <p>"Although his communication frequency was poor at first, I love the outcome. Austine fixed our bios, our ad copy, our whole brand message — and within 3 weeks, our leads doubled."</p>
             </div>
             <div class="testimonial-author">
-              <strong>Chan Bulondi</strong> — Ontario Skincare Brand
+              <strong>Chan Bulondi</strong> — Skincare Brand (Ontario, Canada)
             </div>
           </div>
 
           <div class="testimonial animate-on-scroll">
+            <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
             <div class="testimonial-content">
-              <p>"I cannot recommend Austine enough for complete content strategy & Copywriting! My engagement is up, I am getting more conversations in my DMs and I've seen a notable increase in followers. I have much more time now to focus on my business building because he has taken so much off my plate, and because of that, I've seen a huge increase in revenue. Signing up with Austine is one of the best business decisions I made"</p>
+              <p>"My DMs exploded with conversations, my followers shot up, and I finally had time to focus on building. Since working with Austine, revenue's up and stress is down. One of the best business decisions I've made."</p>
             </div>
             <div class="testimonial-author">
-              <strong>Steve Oriabure</strong> — Nigeria-based entrepreneur & importer (e-commerce & retail)
+              <strong>Steve Oriabure</strong> — Ecom & Retail Entrepreneur (Nigeria)
             </div>
           </div>
 
           <div class="testimonial animate-on-scroll">
+            <div class="testimonial-stars">⭐️⭐️⭐️⭐️</div>
             <div class="testimonial-content">
-              <p>"We got stuck with 'vanity contents for my business before… but Austine came in with clarity, systems & then results."</p>
+              <p>"Before Austine, we were stuck on 'vanity content.' He brought clarity, structure, and results that actually mattered."</p>
             </div>
             <div class="testimonial-author">
-              <strong>Salim Al Shehhi</strong> — Dubai-Based SaaS Consultant
+              <strong>Salim Al Shehhi</strong> — SaaS Consultant (Dubai)
             </div>
           </div>
 
           <div class="testimonial animate-on-scroll">
+            <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
             <div class="testimonial-content">
-              <p>"I've worked with copywriters before, but what Austine delivered? Man—it was like he reached into my brain, pulled out my thoughts, and turned them into dollar-pulling words. The ad copy he wrote didn't just sell the product—it made it feel alive. Sales shot up, engagement doubled, and my inbox? Let's just say it's been busy. If you're thinking twice, don't. This guy's the real deal."</p>
+              <p>"Austine literally pulled my best ideas out of my brain and turned them into sales copy that prints money. Our ad engagement doubled, and sales followed fast. This dude gets it."</p>
             </div>
             <div class="testimonial-author">
-              <strong>Jake Morrison</strong> — Montana-based Product Creator & BBQ Sauce Enthusiast
+              <strong>Jake Morrison</strong> — Product Creator & BBQ Brand Owner (Montana, USA)
             </div>
           </div>
         </div>
         
         <div class="testimonials-cta animate-on-scroll">
-          <p>Waste No time further. Your testimonial could be next - Have me examine your Business sales funnel, and help you optimize it for growth in "sales & social media presence"</p>
-          <p><strong>Are you serious about your business? Then Book A Free Consultation - Let's Help Your Business Grow in Visibility and Conversion</strong></p>
+          <p><strong>Want this to be your story?</strong></p>
+          <p>Let's uncover what's blocking your growth — and fix it.</p>
+          <p><strong>Let's Make Your Testimonial The Next...</strong></p>
           <button class="cta-button primary">
             <span>BOOK NOW</span>
             <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
@@ -235,8 +239,132 @@ export function createLandingPage(): string {
           </div>
         </div>
         <p class="services-tagline animate-on-scroll">👉 This isn't random content. It's smart strategy that scales.</p>
+      </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section">
+      <div class="container">
+        <h2 class="animate-on-scroll">My Signature Offer Includes...</h2>
+        <div class="offers-content animate-on-scroll">
+          <div class="offer-list">
+            <div class="offer-item">✔️ A personalized content strategy map</div>
+            <div class="offer-item">✔️ 2–4 weeks of content & copy planning</div>
+            <div class="offer-item">✔️ Social page optimization (bio, CTA, flow)</div>
+            <div class="offer-item">✔️ Social Media Management(SMM)</div>
+            <div class="offer-item">✔️ Done-for-you caption/copy bundle (Optional)</div>
+            <div class="offer-item">✔️ Sales Funnel Optimization (Optional)</div>
+            <div class="offer-item">✔️ Clear guidance to grow sales without ads</div>
+          </div>
+          <div class="pricing">
+            <h3>💥 Starting at $500/project (Copywriting + Sales Funnel Optimization lite)</h3>
+            <p>or</p>
+            <h3>$1000/monthly (Content Strategy + SMM + Copywriting + Sales-funnel Optimization)</h3>
+          </div>
+        </div>
+        
+        <div class="offers-cta animate-on-scroll">
+          <p>Let's craft you a custom strategy and offer for your business - based on what it lacks, or what it specifically needs - to achieve better results.</p>
+          <h3>Ready to Stop Posting Randomly & Start Growing Intentionally?</h3>
+          <p>Let's turn your business storefront ( social Media, Sales funnel, or website ) into a client-generating machine</p>
+          <p>With zero stress, just smart moves.</p>
+          <p><strong>👉 Book Your Free Discovery Call Now OR 👉 A Free 10-Minute Audit</strong></p>
+          <p class="urgency">( ONLY 2 CLIENT SLOTS ARE OPEN THIS MONTH — Grab yours Fast! )</p>
+          <button class="cta-button primary large">
+            <span>BOOK NOW</span>
+            <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
         
         <!-- Pricing Section -->
+        <div class="pricing-section animate-on-scroll">
+          <h3 class="pricing-title">COPYWRITING PRICING</h3>
+          <p class="pricing-subtitle">I recommend any of the following custom packages for your Copywriting Needs:</p>
+          
+          <div class="pricing-grid">
+            <!-- The Copy Lite Package -->
+            <div class="pricing-card starter animate-on-scroll">
+              <div class="pricing-header">
+                <h4>THE COPY LITE</h4>
+                <div class="pricing-investment">
+                  <p class="investment-label">INVESTMENT:</p>
+                  <p class="price">$500/PROJECT</p>
+                </div>
+              </div>
+              
+              <div class="pricing-content">
+                <div class="pricing-period">
+                  <h5>WHAT YOU GET</h5>
+                  <ul>
+                    <li>Sales page copy (up to 3 pages)</li>
+                    <li>Email sequence (5 emails)</li>
+                    <li>Social media bio optimization</li>
+                    <li>Basic sales funnel copy</li>
+                    <li>One round of revisions</li>
+                    <li>3-5 day delivery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- The Copy Plus Package -->
+            <div class="pricing-card premium animate-on-scroll">
+              <div class="pricing-header">
+                <h4>THE COPY PLUS</h4>
+                <div class="pricing-investment">
+                  <p class="investment-label">INVESTMENT:</p>
+                  <p class="price">$800/PROJECT</p>
+                </div>
+              </div>
+              
+              <div class="pricing-content">
+                <div class="pricing-period">
+                  <h5>WHAT YOU GET</h5>
+                  <ul>
+                    <li>Complete sales funnel copy</li>
+                    <li>Landing page + sales page copy</li>
+                    <li>Email sequence (10 emails)</li>
+                    <li>Ad copy (5 variations)</li>
+                    <li>Social media captions (15 posts)</li>
+                    <li>Two rounds of revisions</li>
+                    <li>5-7 day delivery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- The Copy Premium Package -->
+            <div class="pricing-card ultimate animate-on-scroll">
+              <div class="pricing-header">
+                <h4>THE COPY PREMIUM</h4>
+                <div class="pricing-investment">
+                  <p class="investment-label">INVESTMENT:</p>
+                  <p class="price">$1200/PROJECT</p>
+                </div>
+              </div>
+              
+              <div class="pricing-content">
+                <div class="pricing-period">
+                  <h5>WHAT YOU GET</h5>
+                  <ul>
+                    <li>Complete sales ecosystem copy</li>
+                    <li>Multi-page sales funnel</li>
+                    <li>Email sequence (20+ emails)</li>
+                    <li>Ad copy + A/B test variations</li>
+                    <li>Social media content (30 posts)</li>
+                    <li>Website copy optimization</li>
+                    <li>Unlimited revisions (within reason)</li>
+                    <li>7-10 day delivery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Strategy/SMM Pricing Section -->
         <div class="pricing-section animate-on-scroll">
           <h3 class="pricing-title">CONTENT STRATEGY/SMM PRICING</h3>
           <p class="pricing-subtitle">I recommend any of the following custom packages for your Content Strategy/SMM Needs:</p>
@@ -353,59 +481,26 @@ export function createLandingPage(): string {
       </div>
     </section>
 
-    <!-- Offers Section -->
-    <section class="offers-section">
-      <div class="container">
-        <h2 class="animate-on-scroll">My Signature Offer Includes...</h2>
-        <div class="offers-content animate-on-scroll">
-          <div class="offer-list">
-            <div class="offer-item">✔️ A personalized content strategy map</div>
-            <div class="offer-item">✔️ 2–4 weeks of content & copy planning</div>
-            <div class="offer-item">✔️ Social page optimization (bio, CTA, flow)</div>
-            <div class="offer-item">✔️ Social Media Management(SMM)</div>
-            <div class="offer-item">✔️ Done-for-you caption/copy bundle (Optional)</div>
-            <div class="offer-item">✔️ Sales Funnel Optimization (Optional)</div>
-            <div class="offer-item">✔️ Clear guidance to grow sales without ads</div>
-          </div>
-          <div class="pricing">
-            <h3>💥 Starting at $500/project (Copywriting + Sales Funnel Optimization lite)</h3>
-            <p>or</p>
-            <h3>$1000/monthly (Content Strategy + SMM + Copywriting + Sales-funnel Optimization)</h3>
-          </div>
-        </div>
-        
-        <div class="offers-cta animate-on-scroll">
-          <p>Let's craft you a custom strategy and offer for your business - based on what it lacks, or specifically needs for better results.</p>
-          <h3>Ready to Stop Posting Randomly & Start Growing Intentionally?</h3>
-          <p>Then let's turn your business storefront (social Media, Sales funnel, or website) into a client-generating machine</p>
-          <p>With zero stress, just smart moves.</p>
-          <p><strong>👉 Book Your Free Discovery Call Now OR 👉 A Free 10-Minute Audit</strong></p>
-          <p class="urgency">(ONLY 2 CLIENT SLOTS ARE OPEN THIS MONTH — Grab yours Fast!)</p>
-          <button class="cta-button primary large">
-            <span>BOOK NOW</span>
-            <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
     <!-- About Detail Section -->
     <section class="about-detail-section">
       <div class="container">
         <div class="about-detail-content animate-on-scroll">
           <h2>About</h2>
-          <div class="about-text">
-            <p><strong>Hi i'm Austine Ndubuisi — the velvet hammer behind Austyne-Digitals.</strong></p>
-            <p>I believe great content isn't just written, It's engineered. Designed to speak, sell, and scale. To stop the scroll. Spark emotion. And slide wallets open — not through hype, but by hitting the nerve where desire meets decision.</p>
-            <p>I don't just write. I translate value into irresistible offers. I don't just strategize. I reverse-engineer success from the wallets of your best customers. And I don't just build funnels. I build movements - flows that turn strangers into loyal buyers and buyers into your brand evangelists.</p>
-            <p>My work is for business owners who are done playing small. Who know their product solves a real problem. And want copy, content, and strategy that moves people — and moves profit.</p>
-            <p>Because content without strategy is noise. Strategy without copy is useless. And copy without a heart is dead on arrival.</p>
-            <p>At Austyne-Digitals, I bring them all together. Emotion. Persuasion. Conversion. Execution. The holy trinity of high-performance content that feels real and sells fast.</p>
-            <p><strong>No fluff. No generic templates. No "sprinkle some value and manifest the sales" nonsense.</strong></p>
-            <p>Just strategy backed by psychology, buyer behavior, and a God-tier obsession for results.</p>
-            <p><strong>This is my manifesto. This is my standard. This is Austyne Digitals - building brands that sell themselves.</strong></p>
+          <div class="about-detail-layout">
+            <div class="about-image">
+              <img src="https://austynedigitals.carrd.co/assets/images/image10.jpg?v=59e8eeaf" alt="Austine Ndubuisi - Content Strategist and Copywriter" />
+            </div>
+            <div class="about-text">
+              <p><strong>Hi i'm Austine Ndubuisi — the velvet hammer behind Austyne-Digitals.</strong></p>
+              <p>I believe great content isn't just written, It's engineered. Designed to speak, sell, and scale. To stop the scroll. Spark emotion. And slide wallets open — not through hype, but by hitting the nerve where desire meets decision.</p>
+              <p>I don't just write. I translate value into irresistible offers. I don't just strategize. I reverse-engineer success from the wallets of your best customers. And I don't just build funnels. I build movements - flows that turn strangers into loyal buyers and buyers into your brand evangelists.</p>
+              <p>My work is for business owners who are done playing small. Who know their product solves a real problem. And want copy, content, and strategy that moves people — and moves profit.</p>
+              <p>Because content without strategy is noise. Strategy without copy is useless. And copy without a heart is dead on arrival.</p>
+              <p>At Austyne-Digitals, I bring them all together. Emotion. Persuasion. Conversion. Execution. The holy trinity of high-performance content that feels real and sells fast.</p>
+              <p><strong>No fluff. No generic templates. No "sprinkle some value and manifest the sales" nonsense.</strong></p>
+              <p>Just strategy backed by psychology, buyer behavior, and a God-tier obsession for results.</p>
+              <p><strong>This is my manifesto. This is my standard. This is Austyne Digitals - building brands that sell themselves.</strong></p>
+            </div>
           </div>
         </div>
       </div>
