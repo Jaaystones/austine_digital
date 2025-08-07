@@ -291,80 +291,134 @@ export function createLandingPage(): string {
           <p class="pricing-subtitle">I recommend any of the following custom packages for your Copywriting Needs:</p>
           
           <div class="pricing-grid">
-            <!-- The Copy Lite Package -->
+            <!-- Basic - The Starter Spark Package -->
             <div class="pricing-card starter animate-on-scroll">
               <div class="pricing-header">
-                <h4>THE COPY LITE</h4>
+                <h4>BASIC – THE STARTER SPARK</h4>
                 <div class="pricing-investment">
                   <p class="investment-label">INVESTMENT:</p>
-                  <p class="price">$500/PROJECT</p>
+                  <p class="price">$500</p>
                 </div>
               </div>
               
               <div class="pricing-content">
                 <div class="pricing-period">
+                  <h5>BEST FOR</h5>
+                  <ul>
+                    <li>New business owners & solo-preneurs who need strong copy that converts, without the overwhelm.</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
                   <h5>WHAT YOU GET</h5>
                   <ul>
-                    <li>Sales page copy (up to 3 pages)</li>
-                    <li>Email sequence (5 emails)</li>
-                    <li>Social media bio optimization</li>
-                    <li>Basic sales funnel copy</li>
-                    <li>One round of revisions</li>
-                    <li>3-5 day delivery</li>
+                    <li>One Done-for-You Copy Asset: Choose 1 — Homepage, Landing Page, Sales Page, Or Email Sequence (3 emails)</li>
+                    <li>30-Minute Strategy Call</li>
+                    <li>Audience + Competitor Quick Research</li>
+                    <li>2 Revisions</li>
+                    <li>Delivery in 5–7 Business Days</li>
+                    <li>Free Conversion Checklist</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
+                  <h5>NOT INCLUDED</h5>
+                  <ul>
+                    <li>Advanced research, funnels or full launch support</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
+                  <h5>PERFECT FOR</h5>
+                  <ul>
+                    <li>Getting a solid foundational copy that doesn't suck your budget dry.</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <!-- The Copy Plus Package -->
+            <!-- Pro - The High-Converting Growth Kit Package -->
             <div class="pricing-card premium animate-on-scroll">
               <div class="pricing-header">
-                <h4>THE COPY PLUS</h4>
+                <h4>PRO – THE HIGH-CONVERTING GROWTH KIT</h4>
                 <div class="pricing-investment">
                   <p class="investment-label">INVESTMENT:</p>
-                  <p class="price">$800/PROJECT</p>
+                  <p class="price">$800</p>
+                  <p class="price-then">MOST POPULAR</p>
                 </div>
               </div>
               
               <div class="pricing-content">
                 <div class="pricing-period">
+                  <h5>FOR BRANDS WHO WANT</h5>
+                  <ul>
+                    <li>Powerful, persuasive copy built to scale.</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
                   <h5>WHAT YOU GET</h5>
                   <ul>
-                    <li>Complete sales funnel copy</li>
-                    <li>Landing page + sales page copy</li>
-                    <li>Email sequence (10 emails)</li>
-                    <li>Sales funnel copy</li>
-                    <li>Ad copy (5 variations)</li>
-                    <li>Social media captions (15 posts)</li>
-                    <li>Two rounds of revisions</li>
-                    <li>5-7 day delivery</li>
+                    <li>Two Premium Copy Assets: Choose any 2 — Sales Page, Landing Page, Email Sequence (5), Homepage, Ad Copy, Service Page</li>
+                    <li>Bio Optimization for 1 Social Media page</li>
+                    <li>60-Minute Strategy Session</li>
+                    <li>Ideal Client Persona Worksheet</li>
+                    <li>Basic Sales Funnel Audit (if needed)</li>
+                    <li>Headline + Hook Variations</li>
+                    <li>3 Rounds of Revisions</li>
+                    <li>7–10 Business Day Delivery</li>
+                    <li>Bonus: CTA Swipe File</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
+                  <h5>PERFECT FOR</h5>
+                  <ul>
+                    <li>Business owners, ready to scale with better messaging and smarter funnels.</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <!-- The Copy Premium Package -->
+            <!-- Elite - The Scalable Sales Machine Package -->
             <div class="pricing-card ultimate animate-on-scroll">
               <div class="pricing-header">
-                <h4>THE COPY PREMIUM</h4>
+                <h4>ELITE – THE SCALABLE SALES MACHINE</h4>
                 <div class="pricing-investment">
                   <p class="investment-label">INVESTMENT:</p>
-                  <p class="price">$1200/PROJECT</p>
+                  <p class="price">$1400</p>
                 </div>
               </div>
               
               <div class="pricing-content">
                 <div class="pricing-period">
+                  <h5>BUILT FOR</h5>
+                  <ul>
+                    <li>Businesses who want copy that sells — even while they sleep.</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
                   <h5>WHAT YOU GET</h5>
                   <ul>
-                    <li>Complete sales ecosystem copy</li>
-                    <li>Multi-page sales funnel</li>
-                    <li>Email sequence (20+ emails)</li>
-                    <li>Ad copy + A/B test variations</li>
-                    <li>Social media content (30 posts)</li>
-                    <li>Website copy optimization</li>
-                    <li>Unlimited revisions (within reason)</li>
-                    <li>7-10 day delivery</li>
+                    <li>Complete Funnel Copy Suite: Sales Page + Landing Page + Thank You Page + Email Sequence (7) + 3 Social Ad Copy</li>
+                    <li>Full 90-Min Sales Funnel Strategy Call</li>
+                    <li>Deep Voice-of-Customer Copy Research</li>
+                    <li>Competitor & Market Research Report</li>
+                    <li>Copy Structure Guidance for Your Designer</li>
+                    <li>Bio Optimization for 2 social media pages</li>
+                    <li>4 Rounds of Revisions</li>
+                    <li>7–12 Business Day Delivery</li>
+                    <li>Bonus #1: 30 High-Converting Headlines & Hooks</li>
+                    <li>Bonus #2: 7-Day Launch Copy Calendar</li>
+                    <li>Priority Support: Email/WhatsApp (7 Days Post-Delivery)</li>
+                  </ul>
+                </div>
+                
+                <div class="pricing-period">
+                  <h5>PERFECT FOR</h5>
+                  <ul>
+                    <li>Established brands ready for serious sales growth, funnel clarity, and full copy domination.</li>
                   </ul>
                 </div>
               </div>
@@ -484,6 +538,36 @@ export function createLandingPage(): string {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Add-Ons Section -->
+        <div class="pricing-section animate-on-scroll">
+          <h3 class="pricing-title">➕ Want More? Add-Ons Available:</h3>
+          
+          <div class="offer-list">
+            <div class="offer-item">Copy Review + Audit – $150</div>
+            <div class="offer-item">Extra Email – $100/email</div>
+            <div class="offer-item">Ad Copy Bundle – $200</div>
+            <div class="offer-item">Funnel Strategy Map – $250</div>
+          </div>
+        </div>
+
+        <!-- Discovery Call CTA Section -->
+        <div class="pricing-section animate-on-scroll">
+          <hr style="border: 1px solid var(--bg-light); margin: 40px 0;">
+          
+          <h3 class="pricing-title">Not Sure Which Tier Fits Your Business?</h3>
+          <p class="pricing-subtitle">Let's Talk.</p>
+          <p class="pricing-subtitle">Book a FREE 15-min Discovery Call</p>
+          
+          <div style="text-align: center; margin-top: 30px;">
+            <a href="https://calendly.com/austynedigitals" target="_blank" class="cta-button primary large">
+              <span>BOOK NOW</span>
+              <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
