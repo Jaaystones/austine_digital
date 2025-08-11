@@ -69,6 +69,23 @@ export function createLandingPage(): string {
       </div>
     </section>
 
+    <!-- Strategy Overview Section -->
+    <section class="strategy-overview-section">
+      <div class="container">
+        <div class="strategy-content animate-on-scroll">
+          <ul class="strategy-points">
+            <li>Strategy-backed content,</li>
+            <li>Conversion-focused sales copy,</li>
+            <li>Social growth that drives real sales, &</li>
+            <li>Sales Funnel Optimization</li>
+          </ul>
+          <p class="strategy-description">
+            For Founders, Service-based Businesses, SaaS companies, Consultants, Coaches & Personal Brands in USA, Canada, Australia, Europe & Dubai ready to scale without chaos.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Problem Section -->
     <section class="problem-section" id="problem">
       <div class="container">
